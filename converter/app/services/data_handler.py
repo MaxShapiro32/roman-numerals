@@ -4,12 +4,6 @@ import re
 roman_numeral_value_map = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 roman_numeral_special_value_map = {"CM": 900, "CD": 400, "XC": 90, "XL": 40, "IX": 9, "IV": 4}
 
-def get_data(context):
-    context.start("getData")
-    context.stop()
-    #raise example_error.ExampleException("TODO: Implement me!")
-
-
 def to_number(roman_numeral):
     roman_numeral = roman_numeral.upper()
     result = 0
